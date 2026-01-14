@@ -85,7 +85,7 @@ function App() {
           >
             {/* Logo Image */}
             <div className="h-10 w-10 flex items-center justify-center overflow-hidden rounded-xl">
-              <img src="/logo_orignal.png" alt="Y" className="h-10 w-10 object-contain invert dark:invert-0 [data-theme='light']:invert" />
+              <img src="/logo_orignal.png" alt="Y" className="h-10 w-10 object-contain" />
             </div>
             <span className="font-semibold tracking-tight text-primary">Yug Shah</span>
           </div>
