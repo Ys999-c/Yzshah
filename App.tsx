@@ -83,10 +83,7 @@ function App() {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); triggerHaptic(); }}
           >
-            {/* Logo Image */}
-            <div className="h-10 w-10 flex items-center justify-center overflow-hidden rounded-xl">
-              <img src="/logo_orignal.png" alt="Y" className="h-10 w-10 object-contain" />
-            </div>
+
             <span className="font-semibold tracking-tight text-primary">Yug Shah</span>
           </div>
 
