@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yug Shah - AI/ML Portfolio</title>
+  <link rel="icon" type="image/png" href="/logo_orignal.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            background: 'var(--bg-primary)',
+            surface: 'var(--bg-surface)',
+            primary: 'var(--text-primary)',
+            secondary: 'var(--text-secondary)',
+            accent: 'var(--accent-primary)',
+            'accent-dim': 'var(--accent-dim)',
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      /* Default (Dark) - Indigo/Purple */
+      --bg-primary: #000000;
+      --bg-surface: #111111;
+      --text-primary: #ffffff;
+      --text-secondary: #a3a3a3;
+      --accent-primary: #6366f1;
+      /* Indigo 500 */
+      --accent-dim: rgba(99, 102, 241, 0.15);
+      --spotlight: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="light"] {
+      /* Light - Orange Accent */
+      --bg-primary: #ffffff;
+      --bg-surface: #f3f4f6;
+      --text-primary: #111111;
+      --text-secondary: #4b5563;
+      --accent-primary: #f97316;
+      /* Orange 500 */
+      --accent-dim: rgba(249, 115, 22, 0.15);
+      --spotlight: rgba(0, 0, 0, 0.05);
+    }
+
+    [data-theme="mono"] {
+      /* Monochromatic - High Contrast */
+      --bg-primary: #000000;
+      --bg-surface: #1a1a1a;
+      --text-primary: #ffffff;
+      --text-secondary: #d4d4d4;
+      --accent-primary: #ffffff;
+      --accent-dim: rgba(255, 255, 255, 0.15);
+      --spotlight: rgba(255, 255, 255, 0.15);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Mono mode specific overrides */
+    [data-theme="mono"] .colored-icon {
+      filter: grayscale(100%);
+    }
+
+    [data-theme="mono"] .gradient-text {
+      background: none !important;
+      -webkit-text-fill-color: initial !important;
+      color: var(--text-primary);
+    }
+
+    /* Hide scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.26.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
